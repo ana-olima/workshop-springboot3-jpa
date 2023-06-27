@@ -3,6 +3,7 @@ package com.projeto.demo.entities.pk;
 import java.io.Serializable;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.projeto.demo.entities.Order;
 import com.projeto.demo.entities.Product;
 
@@ -23,6 +24,7 @@ public class OrderItemPK implements Serializable{
 	@JoinColumn(name = "product_id")
 	private Product product;
 	
+	@JsonIgnore
 	public Order getOrder() {
 		return order;
 	}

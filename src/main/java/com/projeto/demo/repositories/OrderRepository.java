@@ -7,9 +7,4 @@ import com.projeto.demo.entities.User;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
 	
-	
-	
-	
-	
-
 }
